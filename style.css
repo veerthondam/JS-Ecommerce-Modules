@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    font-size: 16px;
+}
+
+.header nav {
+    padding: 20px 35px;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.main {
+    display: flex;
+    padding: 3rem 2rem;
+    gap: 1rem;
+}
+
+.desc1,
+.desc2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    padding: 0 0.45rem;
+}
+
+
+.image-container {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.product-list {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.filter {
+    border: 1px solid #ccc;
+}
+
+.product-card {
+    position: relative;
+}
+
+.product-card:hover {
+    border: 1px solid #ccc;
+
+}
+
+.add-to-cart {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
+
+.act {
+    position: relative;
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: -9px;
+    right: -20px;
+    background-color: red;
+    border-radius: 50%;
+    padding: 0.1rem 0.4rem;
+    font-weight: 700;
+    font-size: 12px;
+    
+}
+
+/* Notification box styles */
+#notification-box {
+    display: flex;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+        opacity: 0; 
+        transform: translateY(0); 
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    gap: 1rem;
+}
+
+#notification-box.show {
+    opacity: 1;
+    transform: translateY(200px);
+    /* Slide down */
+}
+
+#notification-box img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+
+}
+
+#notify-text{
+    font-size: 20px;
+    font-weight: 700;
+}
