@@ -35,3 +35,11 @@ function showNotification(imgUrl) {
     notification.classList.remove("show");
   }, 2000);
 }
+
+window.addEventListener("load", function () {
+  let savedCart = localStorage.getItem("cart");
+  if (savedCart) {
+    cart = JSON.parse(savedCart);
+    document.querySelector(".badge").innerText = cart.length;
+  }
+});
