@@ -7,92 +7,21 @@
     <title>Product Listing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body>  
 
     <div class="container">
-        <div class="header" id="header">
-           
-        </div>
+        <div class="header" id="header"></div>
         <div class="main">
-            <div class="filter">
-                This is placeholder for filter
+            <div class="product-list" id="product-list"></div>
             </div>
-            <div class="product-list">
-                <!-- Product 1 -->
-                <div class="product-card" id="p01">
-                    <figure class="image-container">
-                        <img src="https://b.zmtcdn.com/data/pictures/7/52357/758007b3cfff26e1ff10443be701c61b_o2_featured_v2.jpg?output-format=webp"
-                            alt="">
-                    </figure>
-                    <div class="desc1">
-                        <h4> SubWay </h4>
-                        <div> Rating 4.0</div>
-                    </div>
-                    <div class="desc2">
-                        <h4> Healthly Food, Junk </h4>
-                        <div class="price">250</div>
-                    </div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <!-- Product 2 -->
-                <div class="product-card" id="p02">
-                    <figure class="image-container">
-                        <img src="https://b.zmtcdn.com/data/pictures/chains/1/50471/6fa39637442e85efb64a5c0db7b31b7f_o2_featured_v2.jpg?output-format=webp"
-                            alt="">
-                    </figure>
-                    <div class="desc1">
-                        <h4> Empire Restaurant </h4>
-                        <div> Rating 4.0</div>
-                    </div>
-                    <div class="desc2">
-                        <h4> Healthly Food, Junk </h4>
-                        <div class="price">350</div>
-                    </div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="product-card" id="p03">
-                    <figure class="image-container">
-                        <img src="https://b.zmtcdn.com/data/pictures/chains/1/50691/92d9b4053ef0965120828b4fa4eecc3b_o2_featured_v2.jpg?output-format=webp"
-                            alt="">
-                    </figure>
-                    <div class="desc1">
-                        <h4> Meghana Foods </h4>
-                        <div> Rating 4.0</div>
-                    </div>
-                    <div class="desc2">
-                        <h4> Healthly Food, Junk </h4>
-                        <div class="price">450</div>
-                    </div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <!-- Product 4 -->
-                <div class="product-card" id="p04">
-                    <figure class="image-container">
-                        <img src="https://b.zmtcdn.com/data/pictures/chains/2/50382/02167efe2570061c2dc91ac1866a3bc7_o2_featured_v2.jpg?output-format=webp"
-                            alt="">
-                    </figure>
-                    <div class="desc1">
-                        <h4> Dominos Pizza </h4>
-                        <div> Rating 4.0</div>
-                    </div>
-                    <div class="desc2">
-                        <h4> Healthly Food, Junk </h4>
-                        <div class="price">550</div>
-                    </div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
+            <div class="pagination-controls">
+                <button class="prev" onclick="previous()">Previous</button>
+                <span id="pageNumber"></span>
+                <button class="next" onclick="nextPage()">Next</button>
             </div>
         </div>
-    </div>
-
-    <div id="notification-box">
-        <img src="" alt="" id="notify-img">
-        <span id="notify-text"> This is text</span>
-    
+   </div> 
+   <script src="loadData.js"></script>
     <script src="script.js"></script>
     
     </body>

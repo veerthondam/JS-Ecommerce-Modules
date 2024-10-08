@@ -12,18 +12,20 @@ body {
 }
 
 .header nav {
-    padding: 20px 35px;
-    border: 1px solid;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
-    background-color: cornflowerblue;
-    color: white;
+    background-color: white;
+    color: #000000;
+    align-items: center;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
 }
 
 .main {
     display: flex;
     padding: 3rem 2rem;
     gap: 1rem;
+    justify-content: center;
 }
 
 .desc1,
@@ -138,6 +140,48 @@ body {
     font-weight: 700;
 }
 .act a {
-    color: #ffffff;
+   
     text-decoration: none;
+}
+.act .badge{
+    color: white;
+}
+.logo{
+    height: 50px;
+    width: 80px;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.pagination-controls{
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content; 
+
+}
+.pagination-controls button{
+        width: 80px;
+    height: 40px;
+    border: none;
+    background: #0d6efd;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.pagination-controls button:hover{
+    background-color: #0b5ed7;
+}
+
+.pagination-controls .disabled{
+    cursor: not-allowed;
+    background-color: #babbbc;
+}
+.pagination-controls .disabled:hover{
+    background-color: #babbbc;
 }
