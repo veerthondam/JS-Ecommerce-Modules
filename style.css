@@ -10,6 +10,12 @@ html,
 body {
     font-size: 16px;
 }
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
 .header nav {
     padding: 1rem 2rem;
@@ -26,6 +32,8 @@ body {
     padding: 3rem 2rem;
     gap: 1rem;
     justify-content: center;
+        margin: 60px 0;
+
 }
 
 .desc1,
@@ -184,4 +192,16 @@ body {
 }
 .pagination-controls .disabled:hover{
     background-color: #babbbc;
+}
+@media only screen and (max-width: 767px) {
+.main{
+    overflow-y: scroll;
+
+}
+.pagination-controls{
+    position: static;
+    text-align: center;
+    transform: none;
+    margin: 0 auto;
+}
 }
